@@ -38,6 +38,8 @@ while (elejir_productos == true) {
         } else if (eleccion_usuario_categoria == 4) {
             array_dulces.push(alimento_agregar);
             
+        } else {
+            console.log("Esa categoria no está predefinida.")
         }
         
         console.log("------------------------------");
@@ -48,8 +50,10 @@ while (elejir_productos == true) {
         
         if (eleccion_usuario_seguir_elijiendo == 1) {
             elejir_productos = true;
-        } else {
+        } else if (eleccion_usuario_seguir_elijiendo == 2) {
             elejir_productos = false;
+        } else {
+            console.log("Esa opcion no está predefinida.")
         }
     } else if (eleccion_usuario == 3) {
         console.log("¿Que producto deseas aliminar?");
@@ -110,6 +114,8 @@ while (elejir_productos == true) {
             if (eleccion_usuario_eliminar == 1) {
                 array_dulces.splice(Number(numero_usuario_eliminar_producto) - 1, 1);
             }
+        } else {
+            console.log("Esa categoria no está predefinida.")
         }
     } else {
         break;
