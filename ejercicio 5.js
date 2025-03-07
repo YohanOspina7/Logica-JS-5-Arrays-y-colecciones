@@ -55,6 +55,8 @@ while (elejir_productos == true) {
         } else {
             console.log("Esa opcion no está predefinida.")
         }
+    } else if (eleccion_usuario == 2) {
+        break;
     } else if (eleccion_usuario == 3) {
         console.log("¿Que producto deseas aliminar?");
         console.log(`1. Frutas: ${array_frutas}`);
@@ -118,7 +120,7 @@ while (elejir_productos == true) {
             console.log("Esa categoria no está predefinida.")
         }
     } else {
-        break;
+        console.log("Esa opcion no esta predefinida")
     }
 }
 console.log("----------------------")
